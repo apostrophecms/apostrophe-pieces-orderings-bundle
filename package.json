@@ -1,0 +1,30 @@
+{
+  "name": "apostrophe-pieces-orderings",
+  "version": "2.0.0",
+  "description": "Sort your pieces in a handpicked order. Create multiple orderings and associate them with particular pieces-pages. You can also make one the optimized default sort.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apostrophecms/apostrophe-pieces-orderings.git"
+  },
+  "keywords": [
+    "apostrophecms",
+    "pieces",
+    "order",
+    "featured",
+    "sort"
+  ],
+  "author": "P'unk Avenue LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apostrophecms/apostrophe-pieces-orderings/issues"
+  },
+  "homepage": "https://github.com/apostrophecms/apostrophe-pieces-orderings#readme",
+  "dependencies": {
+    "async": "^2.6.0",
+    "lodash": "^4.17.10"
+  }
+}
