@@ -25,6 +25,7 @@
   "homepage": "https://github.com/apostrophecms/apostrophe-pieces-orderings#readme",
   "dependencies": {
     "async": "^2.6.0",
+    "bluebird": "^3.5.1",
     "lodash": "^4.17.10"
   }
 }
