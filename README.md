@@ -31,4 +31,4 @@ Important notes:
 * `apostrophe-pieces-orderings-bundle` should be configured early, before the piece types you wish to order.
 * You must explicitly opt into the feature with `orderings: true` for each pieces, pieces-pages and pieces-widgets module for which you actually want it.
 * If you have a module called `my-pieces` and you want to order them, then you must create a `my-pieces-orderings` module that extends `apostrophe-pieces-orderings`. If for some reason this naming convention does not work for you, you may set the `piecesModuleName` option explicitly, but that's a strange choice; just go with the convention.
-
+* Only one ordering can have the "default" option set to "yes" at a time. The other is automatically set to "no."
