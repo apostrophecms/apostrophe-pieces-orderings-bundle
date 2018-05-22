@@ -4,7 +4,7 @@
   "description": "Sort your pieces in a handpicked order. Create multiple orderings and associate them with particular pieces-pages. You can also make one the optimized default sort.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,9 @@
     "async": "^2.6.0",
     "bluebird": "^3.5.1",
     "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "apostrophe": "^2.41.0",
+    "mocha": "^5.1.1"
   }
 }
