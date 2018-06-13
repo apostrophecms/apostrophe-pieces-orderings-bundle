@@ -1,3 +1,8 @@
+  
+  
+<img src="https://raw.githubusercontent.com/apostrophecms/apostrophe-pieces-orderings-bundle/master/images/select-items.png" />
+  
+  
 This module lets you manually assign an order to pieces. You can use such manually created orderings with `apostrophe-pieces-widgets`, `apostrophe-pieces-pages`, and your own code that fetches pieces via cursors.
 
 And you can also choose to put one of the orders into effect as the "default ordering," meaning that it applies to all queries that don't specify an explicit sort or use their own ordering.
