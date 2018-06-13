@@ -48,39 +48,39 @@ First, click on your piece type in the admin bar (let's say it's "Articles").
 
 Now, in the "Manage" dialog box, click the new "Orderings" button:
 
-<img src="https://raw.github.com/punkave/apostrophe-headless/master/images/click-orderings-button.png" />
+<img src="https://raw.github.com/punkave/apostrophe-pieces-orderings-bundle/blob/master/images/click-orderings-button.png?raw=true" />
 
 A new "Manage" view appears, for managing your orderings. Click the "Add Ordering" button:
 
-<img src="https://raw.github.com/punkave/apostrophe-headless/master/images/add-ordering-button.png" />
+<img src="https://raw.github.com/punkave/apostrophe-pieces-orderings-bundle/blob/master/images/add-ordering-button.png?raw=true" />
 
 Give your ordering a name, such as "Default Ordering" or "Holiday Season Ordering," then click the "Browse" button to choose items and order them:
 
-<img src="https://raw.github.com/punkave/apostrophe-headless/master/images/browse-items-button.png" />
+<img src="https://raw.github.com/punkave/apostrophe-pieces-orderings-bundle/blob/master/images/browse-items-button.png?raw=true" />
 
 Select items as you normally would and use the arrows or drag to reorder them. Then click "Save Choices:"
 
-<img src="https://raw.github.com/punkave/apostrophe-headless/master/images/select-items.png" />
+<img src="https://raw.github.com/punkave/apostrophe-pieces-orderings-bundle/blob/master/images/select-items.png?raw=true" />
 
 If you want your ordering to be the default ordering, meaning that it is the default sort order everywhere, including in the "Manage" view, select "Yes" for the "Default" option:
 
-<img src="https://raw.github.com/punkave/apostrophe-headless/master/images/default.png" />
+<img src="https://raw.github.com/punkave/apostrophe-pieces-orderings-bundle/blob/master/images/default.png?raw=true" />
 
 Now save your ordering and click "Finished" to return to "Manage Pieces."
 
 If you made it the default ordering, the "manage" view of your pieces will immediately reflect it:
 
-<img src="https://raw.github.com/punkave/apostrophe-headless/master/images/manage-view-with-default-order.png" />
+<img src="https://raw.github.com/punkave/apostrophe-pieces-orderings-bundle/blob/master/images/manage-view-with-default-order.png?raw=true" />
 
 If your ordering is not to be the default ordering, you can choose it in the Page Settings of a pieces page such as a blog or events page:
 
-<img src="https://raw.github.com/punkave/apostrophe-headless/master/images/page-settings.png" />
+<img src="https://raw.github.com/punkave/apostrophe-pieces-orderings-bundle/blob/master/images/page-settings.png?raw=true" />
 
 It then takes effect just for the display of pieces on that one page. The ordered pieces appear first, followed by all other pieces in their default sort order. You can use the `_viaOrdering` boolean property to call them out visually in your templates, if you want to.
 
 You can also select "Ordering" for a pieces widget, such as a blog widget. In this case, only the pieces in the ordering are displayed. However you can still set a limit to display only the top 5 or similar, as you might have dozens of pieces in an ordering:
 
-<img src="https://raw.github.com/punkave/apostrophe-headless/master/images/widget.png" />
+<img src="https://raw.github.com/punkave/apostrophe-pieces-orderings-bundle/blob/master/images/widget.png?raw=true" />
 
 Enjoy!
 
