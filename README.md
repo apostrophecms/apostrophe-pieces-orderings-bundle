@@ -48,7 +48,7 @@ First, click on your piece type in the admin bar (let's say it's "Articles").
 
 Now, in the "Manage" dialog box, click the new "Orderings" button:
 
-<img src="https://raw.github.com/punkave/apostrophe-pieces-orderings-bundle/master/images/click-orderings-button.png?raw=true" />
+<img src="https://raw.githubusercontent.com/apostrophecms/apostrophe-pieces-orderings-bundle/master/images/click-orderings-button.png" />
 
 A new "Manage" view appears, for managing your orderings. Click the "Add Ordering" button:
 
