@@ -1,6 +1,6 @@
 {
   "name": "apostrophe-pieces-orderings-bundle",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Sort your pieces in a handpicked order. Create multiple orderings and associate them with particular pieces-pages. You can also make one the optimized default sort.",
   "main": "index.js",
   "scripts": {
