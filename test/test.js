@@ -1,8 +1,5 @@
 var assert = require('assert');
 var _ = require('lodash');
-var async = require('async');
-var request = require('request');
-var fs = require('fs');
 
 describe('apostrophe-pieces-orderings-bundle', function() {
 
@@ -26,7 +23,7 @@ describe('apostrophe-pieces-orderings-bundle', function() {
         },
 
         'apostrophe-pieces-orderings-bundle': {},
-        
+
         'apostrophe-pages': {
           park: [
             {
@@ -43,7 +40,7 @@ describe('apostrophe-pieces-orderings-bundle', function() {
                   title: 'Tab One Child Two',
                   type: 'default',
                   slug: '/tab-one/child-two'
-                },
+                }
               ]
             },
             {
@@ -60,7 +57,7 @@ describe('apostrophe-pieces-orderings-bundle', function() {
                   title: 'Tab Two Child Two',
                   type: 'default',
                   slug: '/tab-two/child-two'
-                },
+                }
               ]
             },
             {
@@ -84,10 +81,10 @@ describe('apostrophe-pieces-orderings-bundle', function() {
             }
           ]
         },
-        'products': {
+        products: {
           extend: 'apostrophe-pieces',
           name: 'product',
-          sort: { 'title': 1 }
+          sort: { title: 1 }
         },
         'products-orderings': {
           extend: 'apostrophe-pieces-orderings'
@@ -104,12 +101,12 @@ describe('apostrophe-pieces-orderings-bundle', function() {
         assert(apos.modules['products-orderings']);
         return callback(null);
       },
-      afterListen: function(err) {
+      afterListen: function() {
         done();
       }
     });
   });
-  
+
   it('insert many test products', function() {
     var total = 50;
     var i = 1;
@@ -128,7 +125,7 @@ describe('apostrophe-pieces-orderings-bundle', function() {
       });
     }
   });
-  
+
   it('get the first ten without an ordering', function() {
     return apos.modules.products.find(apos.tasks.getAnonReq(), {}).limit(10).toArray().then(function(products) {
       var i;
@@ -154,7 +151,7 @@ describe('apostrophe-pieces-orderings-bundle', function() {
   it('create a default ordering', function() {
     var orderings = apos.modules['products-orderings'];
     var ordering = orderings.newInstance();
-    ordering.piecesIds = [ ids[1], ids[3], ids[5], ids[7] ];
+    ordering.piecesIds = [ids[1], ids[3], ids[5], ids[7]];
     ordering.default = true;
     ordering.published = true;
     ordering.title = 'Default Ordering';
@@ -209,7 +206,7 @@ describe('apostrophe-pieces-orderings-bundle', function() {
   it('create a non-default ordering', function() {
     var orderings = apos.modules['products-orderings'];
     nonDefaultOrdering = orderings.newInstance();
-    nonDefaultOrdering.piecesIds = [ ids[0], ids[2], ids[4], ids[6] ];
+    nonDefaultOrdering.piecesIds = [ids[0], ids[2], ids[4], ids[6]];
     nonDefaultOrdering.published = true;
     nonDefaultOrdering.title = 'Non-Default Ordering';
     return orderings.insert(apos.tasks.getReq(), nonDefaultOrdering);
