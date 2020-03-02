@@ -140,6 +140,17 @@ describe('apostrophe-pieces-orderings-bundle', function() {
     });
   });
 
+  it('get the first ten with search and without an ordering', function() {
+    return apos.modules.products.find(apos.tasks.getAnonReq(), {}).limit(10).search('cheese').toArray().then(function(products) {
+      var i;
+      for (i = 1; (i < 10); i++) {
+        assert(products[i - 1].title === ('Cheese #' + padInteger(i, 5)));
+        ids.push(products[i - 1]._id);
+      }
+      return true;
+    });
+  });
+
   it('create a default ordering', function() {
     var orderings = apos.modules['products-orderings'];
     var ordering = orderings.newInstance();
@@ -162,6 +173,14 @@ describe('apostrophe-pieces-orderings-bundle', function() {
       assert(products[7].title === 'Cheese #00007');
       assert(products[8].title === 'Cheese #00009');
       assert(products[9].title === 'Cheese #00010');
+      return true;
+    });
+  });
+
+  it('get the first ten with search and ordering', function() {
+    return apos.modules.products.find(apos.tasks.getAnonReq(), {}).limit(10).search('cheese').toArray().then(function(products) {
+      assert(products.length === 10);
+      // Order not significant but would favor text match
       return true;
     });
   });

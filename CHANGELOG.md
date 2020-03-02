@@ -1,5 +1,7 @@
 ## Changelog
 
+### 2.1.3: fixed a bug introduced in 2.1.2. This bug resulted in a crash on certain queries.
+
 ### 2.1.2: do not crash if a sort based on a text search is present. Also, if the specified sort involves a text search, disable the ordering and sort on match quality as Apostrophe normally does in this situation. As elsewhere in Apostrophe, this is done because the results of a text search without sorting on match quality are extremely poor (single-word matches far down the page might appear first, for instance).
 
 ### 2.1.1: Disables `apostrophe-open-graph` fields on the pieces module.
