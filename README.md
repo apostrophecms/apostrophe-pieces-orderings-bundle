@@ -1,8 +1,9 @@
-  
-  
+![Snyk vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/apostrophe-pieces-orderings-bundle)
+[![CircleCI](https://circleci.com/gh/apostrophecms/apostrophe-pieces-orderings-bundle/tree/master.svg?style=svg)](https://circleci.com/gh/apostrophecms/apostrophe-pieces-orderings-bundle/tree/master)
+
 <img src="https://raw.githubusercontent.com/apostrophecms/apostrophe-pieces-orderings-bundle/master/images/select-items.png" />
-  
-  
+
+
 This module lets you manually assign an order to pieces. You can use such manually created orderings with `apostrophe-pieces-widgets`, `apostrophe-pieces-pages`, and your own code that fetches pieces via cursors.
 
 And you can also choose to put one of the orders into effect as the "default ordering," meaning that it applies to all queries that don't specify an explicit sort or use their own ordering.
@@ -52,56 +53,56 @@ Important notes:
 First, click on your piece type in the admin bar (let's say it's "Articles").
 
 Now, in the "Manage" dialog box, click the new "Orderings" button:
-  
-  
+
+
 <img src="https://raw.githubusercontent.com/apostrophecms/apostrophe-pieces-orderings-bundle/master/images/click-orderings-button.png" />
-  
-  
+
+
 A new "Manage" view appears, for managing your orderings. Click the "Add Ordering" button:
-  
-  
+
+
 <img src="https://raw.githubusercontent.com/apostrophecms/apostrophe-pieces-orderings-bundle/master/images/add-ordering-button.png" />
-  
-  
+
+
 Give your ordering a name, such as "Default Ordering" or "Holiday Season Ordering," then click the "Browse" button to choose items and order them:
-  
-  
+
+
 <img src="https://raw.githubusercontent.com/apostrophecms/apostrophe-pieces-orderings-bundle/master/images/browse-items-button.png" />
-  
-  
+
+
 Select items as you normally would and use the arrows or drag to reorder them. Then click "Save Choices:"
-  
-  
+
+
 <img src="https://raw.githubusercontent.com/apostrophecms/apostrophe-pieces-orderings-bundle/master/images/select-items.png" />
-  
-  
+
+
 If you want your ordering to be the default ordering, meaning that it is the default sort order everywhere, including in the "Manage" view, select "Yes" for the "Default" option:
-  
-  
+
+
 <img src="https://raw.githubusercontent.com/apostrophecms/apostrophe-pieces-orderings-bundle/master/images/default.png" />
-  
-  
+
+
 Now save your ordering and click "Finished" to return to "Manage Pieces."
 
 If you made it the default ordering, the "manage" view of your pieces will immediately reflect it:
-  
-  
+
+
 <img src="https://raw.githubusercontent.com/apostrophecms/apostrophe-pieces-orderings-bundle/master/images/manage-view-with-default-ordering.png" />
-  
-  
+
+
 If your ordering is not to be the default ordering, you can choose it in the Page Settings of a pieces page such as a blog or events page:
-  
-  
+
+
 <img src="https://raw.githubusercontent.com/apostrophecms/apostrophe-pieces-orderings-bundle/master/images/page-settings.png" />
-  
-  
+
+
 It then takes effect just for the display of pieces on that one page. The ordered pieces appear first, followed by all other pieces in their default sort order. You can use the `_viaOrdering` boolean property to call them out visually in your templates, if you want to.
 
 You can also select "Ordering" for a pieces widget, such as a blog widget. In this case, only the pieces in the ordering are displayed. However you can still set a limit to display only the top 5 or similar, as you might have dozens of pieces in an ordering:
-  
-  
+
+
 <img src="https://raw.githubusercontent.com/apostrophecms/apostrophe-pieces-orderings-bundle/master/images/widget.png" />
-  
-  
+
+
 Enjoy!
 
